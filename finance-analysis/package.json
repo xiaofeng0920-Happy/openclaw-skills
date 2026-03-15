@@ -1,0 +1,30 @@
+{
+  "name": "finance-analysis",
+  "version": "1.0.0",
+  "description": "银行结单财务分析技能 - 支持中信银行国际账户分析，生成完整财务报告",
+  "author": "OpenClaw",
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "analysis",
+    "bank",
+    "report",
+    "excel",
+    "pdf"
+  ],
+  "skills": [
+    {
+      "name": "财务分析",
+      "file": "SKILL.md",
+      "triggers": [
+        "财务分析",
+        "银行结单",
+        "收支统计",
+        "现金流分析",
+        "财务报告",
+        "账户分析",
+        "收款方统计"
+      ]
+    }
+  ]
+}
