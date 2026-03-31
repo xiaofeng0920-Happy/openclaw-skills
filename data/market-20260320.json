@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-20T00:44:26.608025",
+  "market": "A 股/港股（锋哥持仓 + AkShare）",
+  "total_stocks": 8,
+  "cn_stocks_count": 0,
+  "hk_stocks_count": 8,
+  "data_source": "feng_portfolio + akshare",
+  "portfolio_file": "/Users/zhaoxf/.openclaw/workspace/agents/twocities-portfolio/config/feng_portfolio.json",
+  "a_share_data": [],
+  "stocks": [
+    {
+      "code": "00700",
+      "name": "腾讯控股",
+      "sector": "港股"
+    },
+    {
+      "code": "03153",
+      "name": "南方日经 225",
+      "sector": "港股"
+    },
+    {
+      "code": "00883",
+      "name": "中国海洋石油",
+      "sector": "港股"
+    },
+    {
+      "code": "09988",
+      "name": "阿里巴巴-W",
+      "sector": "港股"
+    },
+    {
+      "code": "07709",
+      "name": "南方两倍做多",
+      "sector": "港股"
+    },
+    {
+      "code": "02338",
+      "name": "潍柴动力",
+      "sector": "港股"
+    },
+    {
+      "code": "02400",
+      "name": "心动公司",
+      "sector": "港股"
+    },
+    {
+      "code": "02899",
+      "name": "紫金矿业",
+      "sector": "港股"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "markets": ["HK", "CN"],
+  "run_schedule": "daily",
+  "run_time": "09:00",
+  "filters": {
+    "min_market_cap_hk": 40,
+    "min_market_cap_cn": 100,
+    "min_volume": 500000,
+    "max_pe": 30,
+    "min_price_hk": 1,
+    "max_price_hk": 1000,
+    "min_price_cn": 2,
+    "max_price_cn": 500
+  },
+  "scoring": {
+    "value_weight": 0.3,
+    "momentum_weight": 0.4,
+    "quality_weight": 0.3
+  },
+  "portfolio": {
+    "top_n": 15,
+    "max_single_weight": 0.15,
+    "rebalance_frequency": "weekly"
+  },
+  "output": {
+    "save_csv": true,
+    "save_json": true,
+    "send_feishu": true
+  }
+}

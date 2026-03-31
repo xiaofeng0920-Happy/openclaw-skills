@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2026-03-26",
+    "timestamp": "2026-03-26T17:04:42.548999",
+    "existing": {
+      "total_value": 1348679.7494871796,
+      "total_pnl": -31578.144641025923,
+      "total_pnl_pct": -2.2878437990004197
+    },
+    "old_weight": {
+      "total_value": 0,
+      "total_pnl": -1000000,
+      "total_pnl_pct": -100.0
+    },
+    "new_weight": {
+      "total_value": 1000735.9519244683,
+      "total_pnl": 735.9519244682742,
+      "total_pnl_pct": 0.07359519244682743
+    }
+  }
+]

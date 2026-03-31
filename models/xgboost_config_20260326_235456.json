@@ -1,0 +1,44 @@
+{
+  "model_file": "/Users/zhaoxf/.openclaw/skills/港股量化投资/models/xgboost_model_20260326_235456.pkl",
+  "feature_cols": [
+    "momentum_20d",
+    "momentum_5d",
+    "rsi_14",
+    "volatility_20d",
+    "volume_ratio",
+    "turnover_rate"
+  ],
+  "target_period": 20,
+  "cv_scores": {
+    "avg_rmse": 0.09778915340913093,
+    "avg_r2": 0.004108111423796834
+  },
+  "feature_importance": [
+    {
+      "feature": "volatility_20d",
+      "importance": 0.20814549922943115
+    },
+    {
+      "feature": "momentum_20d",
+      "importance": 0.19978082776069642
+    },
+    {
+      "feature": "momentum_5d",
+      "importance": 0.17352728247642518
+    },
+    {
+      "feature": "turnover_rate",
+      "importance": 0.15523216724395753
+    },
+    {
+      "feature": "rsi_14",
+      "importance": 0.13696231544017792
+    },
+    {
+      "feature": "volume_ratio",
+      "importance": 0.1263518825173378
+    }
+  ],
+  "training_date": "2026-03-26T23:54:56.398908",
+  "training_samples": 40321
+}

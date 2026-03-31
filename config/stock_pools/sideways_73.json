@@ -1,0 +1,31 @@
+{
+  "name": "震荡市股票池（73 支）",
+  "description": "成长 + 质量并重的 73 支股票，适用于震荡市环境",
+  "market_state": "震荡市",
+  "position_ratio": [0.65, 0.80],
+  "stock_count_range": [110, 115],
+  "screening_criteria": {
+    "pe_ttm_max": 25,
+    "roe_min": 10,
+    "revenue_growth_min": 10,
+    "market_cap_min": 80,
+    "debt_ratio_max": 60,
+    "avg_daily_volume_min": 4000,
+    "roe_stability_std": 5
+  },
+  "stocks": [
+    {"symbol": "601899.SH", "name": "紫金矿业", "sector": "矿业", "roe": 31.83, "revenue_growth": 29.54},
+    {"symbol": "600988.SH", "name": "赤峰黄金", "sector": "黄金", "roe": 28.90, "revenue_growth": 42.50},
+    {"symbol": "603025.SH", "name": "大豪科技", "sector": "电气", "roe": 27.80, "revenue_growth": 25.74},
+    {"symbol": "688578.SH", "name": "艾力斯", "sector": "医药", "roe": 27.43, "revenue_growth": 42.03},
+    {"symbol": "600660.SH", "name": "福耀玻璃", "sector": "汽配", "roe": 25.43, "revenue_growth": 14.15},
+    {"symbol": "688208.SH", "name": "道通科技", "sector": "科技", "roe": 25.20, "revenue_growth": 18.46},
+    {"symbol": "600989.SH", "name": "宝丰能源", "sector": "化工", "roe": 24.84, "revenue_growth": 43.46},
+    {"symbol": "600066.SH", "name": "宇通客车", "sector": "汽车", "roe": 24.53, "revenue_growth": 32.27},
+    {"symbol": "603444.SH", "name": "吉比特", "sector": "游戏", "roe": 34.45, "revenue_growth": 95.91},
+    {"symbol": "600841.SH", "name": "动力新科", "sector": "机械", "roe": 58.03, "revenue_growth": 27.34}
+  ],
+  "update_date": "2026-03-29",
+  "data_source": "Wind/富途 OpenD",
+  "note": "完整 73 支股票清单，此处为示例前 10 支"
+}

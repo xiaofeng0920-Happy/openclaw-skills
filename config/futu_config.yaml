@@ -1,0 +1,138 @@
+# 富途 OpenD 配置文档
+# 版本：1.0.0
+# 创建日期：2026-03-29
+
+# ==================== 连接配置 ====================
+connection:
+  host: "127.0.0.1"
+  port: 11111
+  timeout: 30  # 连接超时时间（秒）
+  retry_times: 3  # 重试次数
+
+# ==================== 认证配置 ====================
+authentication:
+  # OpenD GUI 版无需密码（已解锁情况下）
+  unlock_password: ""  # 如需密码请填写
+  rsa_private_key: ""  # RSA 私钥（可选）
+
+# ==================== 市场配置 ====================
+markets:
+  - "HK"  # 港股
+  - "US"  # 美股
+  - "SH"  # 沪市
+  - "SZ"  # 深市
+
+# ==================== 数据订阅配置 ====================
+data_subscription:
+  # 行情订阅
+  quote:
+    enable: true
+    max_subscriptions: 300  # 最大订阅数量
+  
+  # K 线订阅
+  kline:
+    enable: true
+    types:
+      - "1M"   # 1 分钟
+      - "5M"   # 5 分钟
+      - "15M"  # 15 分钟
+      - "30M"  # 30 分钟
+      - "60M"  # 60 分钟
+      - "DAY"  # 日 K
+      - "WEEK" # 周 K
+      - "MON"  # 月 K
+  
+  # 逐笔成交
+  trade:
+    enable: false  # 默认不订阅，按需开启
+  
+  # 买卖盘
+  order_book:
+    enable: true
+    depth: 10  # 深度（1-10）
+
+# ==================== 交易配置 ====================
+trading:
+  # 订单类型
+  order_types:
+    - "MARKET"      # 市价单
+    - "LIMIT"       # 限价单
+    - "STOP_LIMIT"  # 止损限价单
+  
+  # 订单时长
+  order_time_in_force:
+    - "DAY"         # 当日有效
+    - "GTC"         # 撤单前有效
+  
+  # 风险控制
+  risk_control:
+    max_order_value: 1000000  # 单笔最大订单金额（元）
+    max_daily_turnover: 5000000  # 单日最大成交额（元）
+    max_position_ratio: 0.10  # 单只股票最大仓位比例
+
+# ==================== 日志配置 ====================
+logging:
+  level: "INFO"  # DEBUG/INFO/WARNING/ERROR
+  file: "logs/futu_api.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# ==================== 缓存配置 ====================
+cache:
+  enable: true
+  expire_time: 300  # 缓存过期时间（秒）
+  max_size: 1000  # 最大缓存条目数
+
+# ==================== 使用示例 ====================
+# 
+# Python 代码示例:
+# 
+# from futu import OpenQuoteContext, OpenTradeContext
+# 
+# # 创建行情上下文
+# quote_ctx = OpenQuoteContext(
+#     host='127.0.0.1',
+#     port=11111
+# )
+# 
+# # 创建交易上下文（如需交易）
+# trade_ctx = OpenTradeContext(
+#     host='127.0.0.1',
+#     port=11111,
+#     unlock_password=''  # 如有密码请填写
+# )
+# 
+# # 获取实时行情
+# ret, data = quote_ctx.get_market_snapshot('HK.00700')
+# 
+# # 订阅行情
+# quote_ctx.subscribe(['HK.00700'], ['QUOTE'])
+# 
+# # 获取订阅信息
+# ret, data = quote_ctx.get_subscription()
+# 
+# # 关闭上下文
+# quote_ctx.close()
+# trade_ctx.close()
+
+# ==================== 注意事项 ====================
+# 
+# 1. OpenD 需要先启动并解锁（GUI 版）
+# 2. 首次连接需要确认授权
+# 3. 交易功能需要额外配置交易密码
+# 4. 建议先在模拟环境测试
+# 5. 实盘交易请谨慎操作，设置好止损
+
+# ==================== 故障排查 ====================
+# 
+# 问题 1：连接失败
+# 解决：检查 OpenD 是否启动，端口是否正确
+# 
+# 问题 2：授权失败
+# 解决：在 OpenD GUI 中确认授权
+# 
+# 问题 3：数据延迟
+# 解决：检查网络连接，增加超时时间
+# 
+# 问题 4：订阅超限
+# 解决：减少订阅数量，或升级 OpenD 版本

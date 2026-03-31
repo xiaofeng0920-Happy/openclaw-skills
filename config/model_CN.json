@@ -1,0 +1,79 @@
+{
+  "market": "CN",
+  "market_name": "A 股",
+  "enabled": true,
+  
+  "factor_weights": {
+    "momentum": 0.25,
+    "value": 0.15,
+    "quality": 0.25,
+    "growth": 0.15,
+    "sentiment": 0.20
+  },
+  
+  "factors": {
+    "momentum": {
+      "weight": 1.0,
+      "sub_factors": {
+        "change_20d": 0.40,
+        "change_60d": 0.30,
+        "rsi_14": 0.20,
+        "volume_ratio": 0.10
+      }
+    },
+    "value": {
+      "weight": 1.0,
+      "sub_factors": {
+        "pe_ratio": 0.40,
+        "pb_ratio": 0.30,
+        "ps_ratio": 0.20,
+        "dividend_yield": 0.10
+      }
+    },
+    "quality": {
+      "weight": 1.0,
+      "sub_factors": {
+        "roe": 0.40,
+        "gross_margin": 0.25,
+        "debt_ratio": 0.20,
+        "earnings_quality": 0.15
+      }
+    },
+    "growth": {
+      "weight": 1.0,
+      "sub_factors": {
+        "revenue_growth": 0.40,
+        "earnings_growth": 0.40,
+        "roe_change": 0.20
+      }
+    },
+    "sentiment": {
+      "weight": 1.0,
+      "sub_factors": {
+        "turnover_rate": 0.35,
+        "capital_flow": 0.35,
+        "volatility": 0.20,
+        "northbound_flow": 0.10
+      }
+    }
+  },
+  
+  "filters": {
+    "min_market_cap": 100,
+    "max_pe": 50,
+    "min_price": 3,
+    "max_price": 500,
+    "min_volume": 1000000,
+    "exclude_st": true,
+    "exclude_kcb": false
+  },
+  
+  "portfolio": {
+    "top_n": 15,
+    "max_single_weight": 0.12,
+    "max_industry_weight": 0.30,
+    "rebalance_frequency": "weekly"
+  },
+  
+  "notes": "A 股模型：情绪因子 20% + 质量因子 25% + 成长因子 15% + 动量因子 25% + 价值因子 15%"
+}

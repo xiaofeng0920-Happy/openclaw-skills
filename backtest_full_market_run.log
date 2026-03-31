@@ -1,0 +1,28 @@
+/Users/zhaoxf/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+================================================================================
+📊 A 股全市场选股回测
+================================================================================
+
+【全市场筛选】
+标准：市值>100 亿，PE<30, ROE>8%, 负债<60%
+
+总股票数：5494
+测试样本：100 只
+
+【回测执行】
+周期：8 年 (2018-2026)
+
+  进度：20/100
+  进度：40/100
+  进度：60/100
+  进度：80/100
+  进度：100/100
+
+有效股票：99
+平均收益：+21.4%
+最佳股票：天马新材 (+1397.6%)
+
+✅ 结果已保存：reports/backtest_full_market_20260330.csv
+
+✅ 全市场回测完成

@@ -1,0 +1,4 @@
+  File "/Users/zhaoxf/.openclaw/skills/港股量化投资/global_market_overview.py", line 140
+    print(f'{code:<12} {name:<15} {close:>10.2f} {change:>9.2f}%")
+                                                                  ^
+SyntaxError: EOL while scanning string literal

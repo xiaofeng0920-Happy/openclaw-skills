@@ -1,0 +1,4 @@
+  File "/Users/zhaoxf/.openclaw/skills/港股量化投资/scripts/backtest_v2.py", line 340
+    print(f'{'='*80}')
+              ^
+SyntaxError: f-string: expecting '}'

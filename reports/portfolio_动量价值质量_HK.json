@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-03-26T16:04:57.504856",
+  "total_stocks": 15,
+  "portfolio": [
+    {
+      "code": "HK.00881",
+      "name": "ZHONGSHENG HLDG",
+      "last_price": 7.93,
+      "pe_ratio": 5.412,
+      "pb_ratio": 0.359,
+      "total_score": 31.1066,
+      "weight": 0.12522373924811248
+    },
+    {
+      "code": "HK.03311",
+      "name": "CHINA STATE CON",
+      "last_price": 8.48,
+      "pe_ratio": 4.785,
+      "pb_ratio": 0.595,
+      "total_score": 30.929,
+      "weight": 0.12072511342036478
+    },
+    {
+      "code": "HK.00966",
+      "name": "CHINA TAIPING",
+      "last_price": 20.62,
+      "pe_ratio": 2.738,
+      "pb_ratio": 0.778,
+      "total_score": 30.5996,
+      "weight": 0.12582627884374772
+    },
+    {
+      "code": "HK.06963",
+      "name": "SUNSHINE INS",
+      "last_price": 3.63,
+      "pe_ratio": 5.98,
+      "pb_ratio": 0.647,
+      "total_score": 30.247399999999995,
+      "weight": 0.08719596897806905
+    },
+    {
+      "code": "HK.00392",
+      "name": "BEIJING ENT",
+      "last_price": 30.7,
+      "pe_ratio": 6.98,
+      "pb_ratio": 0.4,
+      "total_score": 30.092,
+      "weight": 0.0778082826152171
+    },
+    {
+      "code": "HK.02628",
+      "name": "CHINA LIFE",
+      "last_price": 25.58,
+      "pe_ratio": 4.238,
+      "pb_ratio": 1.097,
+      "total_score": 30.0254,
+      "weight": 0.08621843775054917
+    },
+    {
+      "code": "HK.02660",
+      "name": "ZENGAME",
+      "last_price": 2.38,
+      "pe_ratio": 6.397,
+      "pb_ratio": 0.861,
+      "total_score": 29.612,
+      "weight": 0.059324440226931396
+    },
+    {
+      "code": "HK.00855",
+      "name": "CHINA WATER",
+      "last_price": 4.84,
+      "pe_ratio": 7.322,
+      "pb_ratio": 0.572,
+      "total_score": 29.5772,
+      "weight": 0.05548524544237455
+    },
+    {
+      "code": "HK.01336",
+      "name": "NCI",
+      "last_price": 46.78,
+      "pe_ratio": 5.152,
+      "pb_ratio": 1.325,
+      "total_score": 29.5238,
+      "weight": 0.0602000911142216
+    },
+    {
+      "code": "HK.02601",
+      "name": "CPIC",
+      "last_price": 31.78,
+      "pe_ratio": 6.296,
+      "pb_ratio": 0.982,
+      "total_score": 29.4548,
+      "weight": 0.053057435844635174
+    },
+    {
+      "code": "HK.00586",
+      "name": "CONCH VENTURE",
+      "last_price": 11.72,
+      "pe_ratio": 8.449,
+      "pb_ratio": 0.384,
+      "total_score": 29.2394,
+      "weight": 0.039167711252665285
+    },
+    {
+      "code": "HK.01908",
+      "name": "C&D INTL GROUP",
+      "last_price": 12.88,
+      "pe_ratio": 7.139,
+      "pb_ratio": 0.865,
+      "total_score": 29.1596,
+      "weight": 0.038455325426834865
+    },
+    {
+      "code": "HK.01600",
+      "name": "TIAN LUN GAS",
+      "last_price": 2.84,
+      "pe_ratio": 8.58,
+      "pb_ratio": 0.425,
+      "total_score": 29.087,
+      "weight": 0.03258026291774617
+    },
+    {
+      "code": "HK.02877",
+      "name": "SHINEWAY PHARM",
+      "last_price": 8.63,
+      "pe_ratio": 7.866,
+      "pb_ratio": 0.833,
+      "total_score": 28.781,
+      "weight": 0.02106919473540677
+    },
+    {
+      "code": "HK.01126",
+      "name": "DREAM INT'L",
+      "last_price": 7.46,
+      "pe_ratio": 6.837,
+      "pb_ratio": 1.252,
+      "total_score": 28.6442,
+      "weight": 0.017662472183123848
+    }
+  ]
+}

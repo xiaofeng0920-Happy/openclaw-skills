@@ -1,0 +1,8 @@
+# 小巴股票日报定时任务
+# 每个交易日（周一至周五）早上 8:00 生成报告
+
+SHELL=/bin/zsh
+PATH=/usr/local/bin:/usr/bin:/bin
+
+# 生成并保存报告
+0 8 * * 1-5 ~/.openclaw/workspace/agents/xiaoba-stock-agent/generate_report.sh --force >> ~/.openclaw/workspace/agents/xiaoba-stock-agent/logs/cron.log 2>&1

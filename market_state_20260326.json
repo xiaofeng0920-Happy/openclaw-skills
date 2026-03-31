@@ -1,0 +1,28 @@
+{
+  "date": "2026-03-26T23:47:41.410751",
+  "market_state": {
+    "state": "bull",
+    "state_name": "牛市",
+    "score": 3.0,
+    "confidence": 0.6,
+    "indicators": {
+      "price": 23990.116520654832,
+      "ma20": 23947.703693929878,
+      "ma50": 23867.014263916906,
+      "ma200": 23500.174767732315,
+      "price_vs_ma200": 2.0848430182538387,
+      "volatility_20d": 0.2422447525169022,
+      "volume_trend": 0.2875817461864114,
+      "short_term_trend": 0.07725813316266213,
+      "bull_ma": 1.0,
+      "bear_ma": 0.0
+    }
+  },
+  "dynamic_weights": {
+    "momentum": 0.5,
+    "growth": 0.25,
+    "value": 0.1,
+    "quality": 0.1,
+    "sentiment": 0.05
+  }
+}

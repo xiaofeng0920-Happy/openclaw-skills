@@ -1,0 +1,30 @@
+═══════════════════════════════════════════
+  小巴股票日报 - 定时任务安装
+═══════════════════════════════════════════
+
+锋哥，由于系统权限原因，需要你手动运行一条命令：
+
+📋 请复制并运行以下命令：
+
+crontab ~/.openclaw/workspace/agents/xiaoba-stock-agent/xiaoba.cron
+
+═══════════════════════════════════════════
+
+✅ 验证安装成功：
+
+crontab -l
+
+应该看到：
+0 8 * * 1-5 /Users/zhaoxf/.openclaw/workspace/agents/xiaoba-stock-agent/generate_report.sh ...
+
+═══════════════════════════════════════════
+
+📅 发送时间：周一到周五 早上 8:00
+📊 报告位置：~/Library/Application Support/openclaw/workspace/agents/xiaoba-stock-agent/reports/
+📝 日志位置：~/Library/Application Support/openclaw/workspace/agents/xiaoba-stock-agent/logs/
+
+═══════════════════════════════════════════
+
+运行完命令后，明天早上 8 点就会收到报告啦！🎉
+
+═══════════════════════════════════════════

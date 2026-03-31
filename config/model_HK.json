@@ -1,0 +1,75 @@
+{
+  "market": "HK",
+  "market_name": "港股",
+  "enabled": true,
+  
+  "factor_weights": {
+    "momentum": 0.30,
+    "value": 0.30,
+    "quality": 0.25,
+    "growth": 0.05,
+    "sentiment": 0.10
+  },
+  
+  "factors": {
+    "momentum": {
+      "weight": 1.0,
+      "sub_factors": {
+        "change_20d": 0.50,
+        "change_60d": 0.20,
+        "rsi_14": 0.20,
+        "volume_ratio": 0.10
+      }
+    },
+    "value": {
+      "weight": 1.0,
+      "sub_factors": {
+        "pe_ratio": 0.40,
+        "pb_ratio": 0.30,
+        "dividend_yield": 0.30
+      }
+    },
+    "quality": {
+      "weight": 1.0,
+      "sub_factors": {
+        "roe": 0.45,
+        "gross_margin": 0.25,
+        "debt_ratio": 0.20,
+        "earnings_stability": 0.10
+      }
+    },
+    "growth": {
+      "weight": 1.0,
+      "sub_factors": {
+        "revenue_growth": 0.50,
+        "earnings_growth": 0.50
+      }
+    },
+    "sentiment": {
+      "weight": 1.0,
+      "sub_factors": {
+        "turnover_rate": 0.50,
+        "volatility": 0.30,
+        "short_interest": 0.20
+      }
+    }
+  },
+  
+  "filters": {
+    "min_market_cap": 40,
+    "max_pe": 30,
+    "min_price": 1,
+    "max_price": 1000,
+    "min_volume": 500000,
+    "exclude_reits": false
+  },
+  
+  "portfolio": {
+    "top_n": 15,
+    "max_single_weight": 0.15,
+    "max_industry_weight": 0.35,
+    "rebalance_frequency": "weekly"
+  },
+  
+  "notes": "港股模型：价值因子 30% + 动量因子 30% + 质量因子 25% + 情绪因子 10% + 成长因子 5%"
+}
